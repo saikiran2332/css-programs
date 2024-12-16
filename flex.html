@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container{
+        border:1px solid blue;
+        width:80%;
+        display:flex;
+
+        justify-content:space-around ;
+        align-items: center;
+    }
+    .flex-item{
+        width: 100px;
+        height:100px;
+        border:1px solid dodgerblue;
+        background-color: lightpink;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .flex-direction{
+        border:2px solid green;
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+    .item-direction{
+        border:1px solid green;
+        margin:5px;
+        padding:10px;
+        display:flex;
+        justify-content:space-around;
+        background-color: coral;
+    }
+    .flex-wrap{
+        border: 2px solid blue;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-wrap{
+        border: 2px solid brown;
+        margin: 5px;
+        padding:10px;
+    }
+    .container{
+        border: 2px solid;
+        display:flex;
+
+    }
+    .start-item{
+        border: 1px solid red;
+        margin: 5px;
+        padding:10px;
+        background-color: blueviolet;
+
+    }
+    .end-item{
+        margin:5px;
+        padding:10px;
+        background-color: chartreuse;
+        border: 2px solid powderblue;
+    }
+    .flex-start{
+        justify-content: flex-start;
+    }
+    .flex-end{
+        justify-content: flex-end;
+    }
+    /*code for grow and shrink*/
+    .flex-grow-shrink{
+        border:2px solid palevioletred;
+        margin: 5px;
+        padding:10px;
+
+    }
+    .flex-grow-shrink:nth-child(2){
+        flex-grow: 2;
+        flex-shrink: 1;
+    }
+</style>
+<body>
+    <h3>Example of flex box</h3>
+    <div class="flex-container">
+        <div class="flex-item">item1</div>
+        <div class="flex-item">item2</div>
+        <div class="flex-item">item3</div>
+        <div class="flex-item">item4</div>
+        <div class="flex-item">item5</div>
+    </div>
+    <hr>
+    <h3>Example of flex direction</h3>
+    <div class="flex-direction">
+        <div class="item-direction">item1</div>
+        <div class="item-direction">item2</div>
+        <div class="item-direction">item3</div>
+        <div class="item-direction">item4</div>
+    </div>
+    <hr>
+    <h3>Example of flex wrap</h3>
+    <div class="flex-wrap">
+        <div class="item-wrap">item1</div>
+        <div class="item-wrap">item2</div>
+        <div class="item-wrap">item3</div>
+        <div class="item-wrap">item4</div>
+        <div class="item-wrap">item5</div>
+        <div class="item-wrap">item6</div>
+        <div class="item-wrap">item7</div>
+        <div class="item-wrap">item8</div>
+        <div class="item-wrap">item9</div>
+        <div class="item-wrap">item10</div>
+        <div class="item-wrap">item11</div>
+        
+
+        
+
+    </div>
+    <hr>
+    <h3> Example of flex start and flex end</h3>
+    <div class="container flex-start">
+        <div class="start-item">item1</div>
+        <div class="start-item">item2</div>
+        <div class="start-item">item3</div>
+        <div class="start-item">item4</div>
+    </div>
+    <div class="container flex-end">
+        <div class="end-item">item1</div>
+        <div class="end-item">item2</div>
+        <div class="end-item">item3</div>
+        <div class="end-item">item4</div>
+    </div>
+    <hr>
+    <h3>Example of flex-grow-shrink </h3>
+    <div class="container">
+        <div class="flex-grow-shrink">item1</div>
+        <div class="flex-grow-shrink">item2</div>
+        <div class="flex-grow-shrink">item3</div>
+    </div>
+
+</body>
+</html>

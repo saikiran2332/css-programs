@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 100px);
+        border:2px solid black;
+        text-align: center;
+        background-color: rgb(120, 128, 244);
+        gap:10px;
+    }
+    .grid-item{
+        border: 2px solid rgb(227, 212, 6);
+        background-color: rgb(242, 7, 85);
+        color: rgb(176, 241, 12);
+        font-size: 20px;
+        padding: 20px;
+        
+    }
+    .grid-design{
+        display:grid;
+        grid-template-areas: 'header header header' 'section main main'  'footer footer footer';
+        border: 2px solid blue;
+        text-align:center;
+        background-color: #f3f3f3;
+        gap:20px;
+        padding:30px;
+
+                             
+                              
+        
+    }
+    .item-grid{
+        border:2px solid black;
+        padding:20px;
+        background-color: deepskyblue;
+    }
+    .header{
+        grid-area:header;
+    }
+    .section{
+        grid-area:section;
+    }
+    .main{
+        grid-area:main;
+    }
+    .footer{
+        grid-area:footer;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <hr>
+    <div class="grid-design">
+        <div class="item-grid header">header</div>
+        <div class="item-grid section">section</div>
+        <div class="item-grid main">main</div>
+        <div class="item-grid footer">footer</div>
+    </div>
+    <hr>
+    
+</body>
+</html>

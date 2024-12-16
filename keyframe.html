@@ -1,0 +1,89 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .box1{
+            background-color: blue;
+            border:2px solid red;
+            padding:20px;
+            width:100px;
+            height:100px;
+            animation: move 3s ease infinite;
+            
+
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(0);
+            }
+            50%{
+                transform: translateX(500px);
+            }
+            100%{
+                transform:translateX(0);
+            }
+        }
+        .box2{
+            border:2px solid red;
+            background-color: chartreuse;
+            padding:20px;
+            width:100px;
+            height:100px;
+            animation: opacity 3s ease infinite;
+
+        }
+        @keyframes opacity{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0.5;
+            }
+            100%{
+                opacity:0;
+            }
+        }
+        .box3{
+            border:2px solid red;
+            background-color: darkorange;
+            padding:20px;
+            width:100px;
+            height:100px;
+            animation: scale 3s ease infinite;
+            margin:30px;
+        }
+        @keyframes scale{
+            0%{
+                transform: scale(1);
+            }
+            25%{
+                transform: scale(2);
+            }
+            50%{
+                transform: scale(2);
+            }
+            75%{
+                transform: scale(2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+    <body>
+        <h3>Example of Keyframe</h3>
+        <div class="box1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, sed!
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, perspiciatis?
+        </div>
+        <div class="box3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, at?
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:hover{
+        color: red;
+    }
+    .btn:active{
+        background-color: greenyellow;
+
+    }
+    .input-field:focus{
+        border: 3px solid red;
+    }
+    ul li:nth-child(even){
+        background-color: aliceblue;
+    }
+    ul li:nth-child(odd){
+        background-color: aquamarine;
+    }
+    ul li:first-child{
+        font-size:40px;
+    }
+    ul li:last-child{
+        color:blue
+    }
+    p::first-letter{
+        font-size: 2em;
+        color: darkorange;
+
+    }
+    p::first-line{
+        color: deeppink;
+        font-variant: small-caps;
+
+    }
+    p::before{
+        content:"Before message";
+        font-weight: 500;
+    }
+    p::after{
+        content:"after message";
+        font-style: italic;
+    }
+    p::selection{
+        background-color: gold;
+    }
+</style>
+<body>
+    <h3>Example of pseudo classes and pseudo elements</h3>
+    <a href="#">Hover</a>
+    <button class="btn">Click here</button>
+    <input type="text" class="input-field">
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+        <li>fifth</li>
+    </ul>
+    <h1>pseudo elements</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque perspiciatis porro veniam provident. Reprehenderit sed voluptatibus, qui dolore odio in eius quo recusandae provident?
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum non nam libero dolores ab! Itaque numquam magni ducimus unde maxime eligendi corporis quidem inventore.
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo, aperiam, blanditiis repellat quas ipsam sequi quibusdam adipisci hic fugit dolorem recusandae pariatur.
+
+    </p>
+</body>
+</html>

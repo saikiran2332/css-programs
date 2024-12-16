@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height:1500px;
+    }
+    .box{
+        width:200px;
+        height:100px;
+        margin:20px;
+        padding:10px;
+        border:2px solid red;
+
+    }
+    .static-box{
+        /* this will take default values*/
+
+    }
+    .relative-box{
+        position:relative;
+        top:20px;
+        left:30px;
+        
+    }
+    .absolute-box{
+        position:absolute;
+        top:50px;
+        left:70px;
+        background-color: aquamarine;
+    }
+    .fixed-box{
+        position:fixed;
+        background-color: blanchedalmond;
+        /*top:20px;
+        left:20px*/
+    }
+    .sticky-box{
+        position:sticky;
+        background-color: cadetblue;
+        top:20px;
+    }
+</style>
+<body>
+    <h1>Position properties in css</h1>
+    <div class="box static-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum omnis nostrum officiis, inventore accusantium.
+    </div>
+    <div class="box relative-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quos, natus cumque soluta deserunt esse.</div>
+    <div class="box absolute-box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis repellat dolor laboriosam! Deleniti, enim.</div>
+    <div class="box fixed-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi maiores officiis porro officia a totam necessitatibus quis possimus saepe.
+
+    </div>
+    <div class="container">
+        <div class="box sticky-box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error excepturi deserunt quis ipsum beatae, explicabo quibusdam aspernatur voluptatem atque mollitia.
+
+        </div>
+    </div>
+</body>
+</html>

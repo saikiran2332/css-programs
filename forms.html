@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Example of form creation</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label name="name">Name  </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"/>
+            <br>
+            <label name="email">Email  </label>
+            <input type="email" name="email" id="email" placeholder="Enter your password"/>
+            <br>
+            <label name="password" >Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"/>
+            <br><br>
+            <label name="gender" >Gender</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <br><br>
+            <label name="age">Age</label>
+            <input type="number" name="age" min="10" max="25"/>
+        </fieldset>
+        <fieldset>
+            <legend>Additional information</legend>
+            <label name="country">Country</label>
+            <select id="country" name="country" >
+            <option value="counrty" >select your country</option>
+            <option value="India">India</option> 
+            <option value="uk" >uk</option></select><br><br>
+            <label name="msg">Message</label>
+            <textarea id="msg" name="msg" placeholder="write review here" rows="4"></textarea><br><br><br>  
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

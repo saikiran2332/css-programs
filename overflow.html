@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 200px;
+        height:200px;
+        border:1px solid red;
+        margin-bottom: 150px;
+
+    }
+    .visible-box{
+        overflow:visible;
+        /* this is default behaviour*/
+    }
+    .hidden-box{
+        height:55px;
+        overflow:hidden;
+    }
+    .scroll-box{
+        overflow:scroll;
+    }
+    .auto-box{
+        overflow:auto;
+
+    }
+    .x{
+        overflow-x: auto;
+    }
+</style>
+<body>
+    <h1>Example of overflow properties</h1>
+    <div class="container visible-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste eaque repellat sit libero, atque illum doloribus. Fuga labore, expedita quia, asperiores dignissimos eligendi rerum nihil impedit soluta temporibus dolor.
+
+    </div>
+    <div class="container hidden-box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptatibus explicabo magnam? Sit sequi distinctio vitae alias laborum? Inventore reiciendis voluptas sunt aperiam ducimus quidem! Iusto dolores blanditiis consequuntur modi?
+
+    </div>
+    <div class="container scroll-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorem, quam mollitia cumque, assumenda, optio beatae cum ad vitae repellendus vero enim culpa dolorum possimus aspernatur pariatur aliquid at reprehenderit non inventore totam autem! Voluptatem repellendus eius corporis ratione expedita!</div>
+    <div class="container auto-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolores repellat doloribus reiciendis obcaecati et ratione enim quis aut, exercitationem maxime temporibus fuga consequatur nobis dolorum laborum deleniti possimus at libero, non ut amet minima! Praesentium adipisci aut fugiat repellat dolorum vero deserunt dolorem et id. Maiores unde consequuntur dolor!
+
+    </div>
+    <div class="container x">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis ratione exercitationem temporibus molestiae explicabo expedita id non mollitia quisquam. Assumenda magnam voluptate tenetur asperiores veritatis nam minima vero quasi Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque maiores illo aliquam nam itaque nesciunt delectus ratione iure fuga nihil.
+
+    </div>
+</body>
+</html>
